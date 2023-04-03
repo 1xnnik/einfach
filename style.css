@@ -2,9 +2,11 @@
 * {
     box-sizing: border-box;
 }
-body
-{
-    background-color: #808080;
+body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0;
     font-family: 'Play', Montserrat;
     color: white;
@@ -25,17 +27,17 @@ body
     text-decoration: none;
     font-size: 17px;
     text-align: center;
-}
+} 
 .navbar a:hover{
     background-color: #878787;
     color: white;
 }
-    .navbar a.active {
-        /*
-    border: solid;
-    border-color: white;
-        */
-    }
+.navbar a.active{
+    /*
+        border: solid;
+        border-color: white;
+            */                                                              
+}
 .navbar .icon{
     display:none;
 }
@@ -115,7 +117,7 @@ a {
         max-width: 100%;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1079px) {
     .column {
         flex: 50%;
         max-width: 50%;
